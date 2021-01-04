@@ -16,6 +16,7 @@
     --clr-dark: #0D470F;
     --clr-accent: #BACE40;
     --clr-gray: #38383C;
+    --clr-black: #000000;
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
@@ -114,6 +115,9 @@ h3 {
 
 .section__title--accueil {
     font-weight: var(--fw-reg);
+    color: var(--clr-black);
+    padding: -1;
+    /* margin: 0; */
 }
 
 .section__title--accueil strong {
@@ -300,12 +304,12 @@ header {
         align-self: start;
         grid-column: -1/1;
         grid-row: 2;
-        text-align: right;
+        text-align: left;
         position: relative;
         left: -1.5em;
         width: calc(100% + 1.25em);
         padding-right: 2em;
-        padding-left: calc(150px + 1.5em);
+        padding-left: calc(150px + 2.5em);
         /* font-size: 0.75em; */
     }
 }
@@ -423,13 +427,13 @@ header {
 
 .portfolio__item:focus {
     position: relative;
-    z-index: 2;
+    z-index: 100;
 }
 
 .portfolio__item:hover,
 .portfolio__item:focus .portfolio__img {
-    transform: scale(1.2);
-    opacity: .5;
+    transform: scale(1);
+    opacity: .7;
 }
 
 
